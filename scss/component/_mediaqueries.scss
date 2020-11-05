@@ -1,0 +1,70 @@
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (max-width:$breakpoint) {
+.nav{flex-direction: column;}
+
+}
+@media (min-width: $breakpoint) {
+
+
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.container {
+  max-width: 1400px;
+  @include generallayout;
+}
+
+.centered {
+@include generallayout;
+}
+
+.row {
+  flex-direction: row;
+}
+
+[class^=col] {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  align-items: center;
+}
+
+[class^=col] + [class^=col] {
+  margin-left: $secondarymargin;
+}
+
+
+@for $i from 1 through 12{
+  $percentage:8.33%*$i;
+  .col-#{$i}{
+    flex-basis:$percentage;
+
+  }
+
+}
+
+
+.nav-link {
+  flex-basis: 100px;
+}
+
+.btn {
+  padding: $secondarypadding 30px;
+}
+
+.btn + .btn {
+  margin-left: $secondarymargin;
+}
+
+.logo {
+  margin-left: initial;
+  margin-right: initial;
+}
+
+}

@@ -1,0 +1,25 @@
+
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.img-avatar {
+  @include imgproperties;
+}
+
+.img-frame {
+  @include imgproperties($height:null);
+  padding: 13px;
+  border: 1px solid $bordercolor;
+}
+
+.img-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include imgproperties($margin-top:null,$max:null,$height:null);
+}

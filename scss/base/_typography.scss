@@ -1,0 +1,26 @@
+@import "../utilities/variables";
+
+.headline-primary {
+  color: $primarycolor;
+  margin-left: $secondarymargin;
+}
+
+.headline-secondary {
+  font-weight: $fontweight1;
+  color: $secondarycolor;
+}
+
+.link {
+  color: $linkcolor;
+  font-weight: $fontweight2;
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight:$fontweight1;
+  font-style: italic;
+  margin-left: $defaultmargin;
+  padding-left: $defaultpadding;
+  border-left: 8px solid $primarycolor;
+  border-radius: 5px;
+}

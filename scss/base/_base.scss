@@ -1,0 +1,20 @@
+
+
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+@import "../utilities/variables";
+
+* {
+  font-family: 'Lato', sans-serif;
+  color: $secondarycolor;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
